@@ -6,7 +6,6 @@ const getEmployeeByName = (employeeName) => {
   return !employeeObj ? {} : employeeObj;
 };
 
-console.log(getEmployeeByName('Nelson'));
-console.log(getEmployeeByName('Vitor'));
+// console.log(getEmployeeByName('Nels'));
 
 module.exports = getEmployeeByName;
