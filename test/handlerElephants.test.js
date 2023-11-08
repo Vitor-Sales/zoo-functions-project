@@ -10,4 +10,10 @@ describe('Testes da função HandlerElephants', () => {
   it('3- Ao passar o argumento "names" na função handlerElephants(), retorne a quantidade de elefantes, retorne o array [ "Ilana", "Orval", "Bea", "Jefferson" ]', () => {
     expect(handlerElephants('names')).toContain('Jefferson');
   });
+  it('4- Ao passar o argumento tipo "number" na função handlerElephants(), retorne a mensagem "Parâmetro inválido, é necessário uma string"', () => {
+    expect(handlerElephants(85)).toBe('Parâmetro inválido, é necessário uma string');
+  });
+  it('5- Ao não passar argumento na função handlerElephants(), retornar "undefined"', () => {
+    expect(handlerElephants()).toBe(undefined);
+  });
 });

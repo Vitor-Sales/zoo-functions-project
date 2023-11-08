@@ -33,8 +33,9 @@ const handlerElephants = (param) => {
   return computeData(param, elephants);
 };
 
-console.log(handlerElephants('averageAge'));
-console.log(handlerElephants('count'));
-console.log(handlerElephants('names'));
+// console.log(handlerElephants('averageAge'));
+// console.log(handlerElephants('count'));
+// console.log(handlerElephants('names'));
+console.log(handlerElephants(5));
 
 module.exports = handlerElephants;
