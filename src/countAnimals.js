@@ -21,10 +21,9 @@ const countAnimals = (animal) => {
         .filter((resident) => resident.sex === animal.sex);
       quantityOfSpecie = sexCountBySpecie.length;
       return quantityOfSpecie;
-    } else {
-      quantityOfSpecie = findSpecie.residents.length;
-      return quantityOfSpecie;
     }
+    quantityOfSpecie = findSpecie.residents.length;
+    return quantityOfSpecie;
   }
 };
 
