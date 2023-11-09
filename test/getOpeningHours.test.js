@@ -22,7 +22,7 @@ describe('Testes da função getOpeningHours', () => {
   it('4- Ao passar os argumentos ("Wednesday", "09:00-AM"), retornar a string: "The zoo is closed".', () => {
     expect(getOpeningHours('Wednesday', '09:00-PM')).toBe('The zoo is closed');
   });
-  it('5- Ao passar uma argumento que não seja um dia em ingles e seja string, como "oi", lançar erro.', () => {
-    expect(getOpeningHours('oi', '09:00-PM')).toThrow();
+  it('5- Ao passar o  argumento que não seja um dia em ingles e seja string, como "oi", lançar erro.', () => {
+    expect(() => getOpeningHours('Monday', '09:00-EM')).toThrow(new Error('The abbreviation must be \'AM\' or \'PM\''));
   });
 });
