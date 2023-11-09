@@ -39,7 +39,6 @@ const calculateEntry = (entrants) => {
     sum += (entrantsObj.adult * price.adult) + (entrantsObj.senior * price.senior);
     return sum;
   }
-
 };
 
 console.log(countEntrants(entrantss));
