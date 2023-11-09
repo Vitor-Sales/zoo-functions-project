@@ -35,7 +35,8 @@ const calculateEntry = (entrants) => {
   if (entrants) {
     const entrantsObj = countEntrants(entrants);
     const price = data.prices;
-    const sum = (entrantsObj.child * price.child) + (entrantsObj.adult * price.adult) + (entrantsObj.senior * price.senior);
+    let sum = (entrantsObj.child * price.child);
+    sum += (entrantsObj.adult * price.adult) + (entrantsObj.senior * price.senior);
     return sum;
   }
 
