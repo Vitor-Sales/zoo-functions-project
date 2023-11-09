@@ -36,7 +36,7 @@ const dayParameter = (scheduleTarget) => {
   if (allDays.includes(scheduleTarget)) {
     const findDay = hoursEntries.find((day) => day[0] === scheduleTarget);
     return {
-      [scheduleTarget]: { 
+      [scheduleTarget]: {
         officeHour: `Open from ${findDay[1].open}am until ${findDay[1].close}pm`,
         exhibition: data.species.filter((specie) => specie.availability.includes(findDay[0]))
           .map((animal) => animal.name) },
