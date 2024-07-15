@@ -32,13 +32,11 @@ const calculateEntry = (entrants) => {
   if (!entrants || entrants.length === 0) {
     return 0;
   }
-  if (entrants) {
-    const entrantsObj = countEntrants(entrants);
-    const price = data.prices;
-    let sum = (entrantsObj.child * price.child);
-    sum += (entrantsObj.adult * price.adult) + (entrantsObj.senior * price.senior);
-    return sum;
-  }
+  const entrantsObj = countEntrants(entrants);
+  const price = data.prices;
+  let sum = (entrantsObj.child * price.child);
+  sum += (entrantsObj.adult * price.adult) + (entrantsObj.senior * price.senior);
+  return sum;
 };
 
 console.log(countEntrants(entrantss));

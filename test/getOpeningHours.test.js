@@ -25,10 +25,10 @@ describe('Testes da função getOpeningHours', () => {
   it('5- Ao passar o  argumento que não seja um dia em ingles e seja string, como "oi", lançar erro.', () => {
     expect(() => getOpeningHours('Monday', '09:00-EM')).toThrow();
   });
-  it('6- Ao passar o  argumento que não seja um dia em ingles e seja string, como "oi", lançar erro.', () => {
+  it('6- Ao passar no segundo argumento uma abreviatura que nao seja "AM" "PM", lançar erro.', () => {
     expect(() => getOpeningHours('Monday', 'EM')).toThrow();
   });
-  it('7- Ao passar o  argumento que não seja um dia em ingles e seja string, como "oi", lançar erro.', () => {
+  it('7- Ao passar o primeiro argumento um dia que nao existe, lançar um erro.', () => {
     expect(() => getOpeningHours('xablau', 'EM')).toThrow();
   });
 });
